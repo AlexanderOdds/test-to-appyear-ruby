@@ -1,5 +1,4 @@
 <%= stylesheet_link_tag "custom_form", "data-turbo-track": "reload" %>
-
 <div class="form-container">
   <h1 class=>Register Form</h1>
 
@@ -49,7 +48,6 @@
         <%= form.text_field :phone_number %>
       </div>
     </div>
-
     <div class="form-group">
       <%= form.label :subject %>
       <%= form.select :subject, options_for_select([
@@ -62,8 +60,15 @@
       ]) %>
     </div>
 
-    <div class="button-container">
-      <%= form.submit "Submit", class: "submit-button" %>
+    <div class="button-group">
+      <div class="button-container">
+        <%= form.submit "Submit", class: "submit-button" %>
+      </div>
+      <div class="login-button-container">
+        <%= link_to "Member", users_path, class: "view-data-button" %>
+      </div>
     </div>
+
   <% end %>
 </div>
+

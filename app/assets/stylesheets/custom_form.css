@@ -25,6 +25,17 @@ body {
     margin-top: 0;
 }
 
+.form-container {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+    margin-top: 0;
+}
+
 .form-row {
     display: flex;
     gap: 1rem;
@@ -118,8 +129,7 @@ h1 {
 }
 
 input[type="submit"] {
-    background-color: #6c7ae0; 
-    color: white;
+    background-color: #6c7ae0;
     padding: 10px 20px;
     border-radius: 10px;
     font-size: 16px;
@@ -132,5 +142,120 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background-color: #5a68d5; 
+    background-color: #5a68d5;
+}
+
+.button-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.login-button-container {
+    margin-top: 2rem;
+    text-decoration: underline;
+}
+
+.login-button-container:hover {
+    color: #5a68d5;
+
+}
+
+
+/* Link styles */
+.view-data-button {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    /* Blue color */
+    color: rgb(0, 0, 0);
+    text-decoration: underline;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+.view-data-button:hover {
+    color: #5a68d5 ;
+}
+/* General page styles */
+h1 {
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Link styles */
+.view-data{
+    margin-left: 115px;
+    display: flex;
+    padding: 0.5rem 1rem;
+    background-color: #3498db;
+    /* Blue color */
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    max-width: 6rem;
+}
+.view-data:hover {
+    background-color: #5a68d5;
+
+}
+
+
+/* Card container styles */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    max-height: 600px; /* Set max height for scrolling */
+    overflow-y: auto; /* Enable vertical scrolling */
+    padding-right: 15px; /* Add space for scrollbar */
+}
+
+/* Card styles */
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 1rem;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+}
+
+.card-body {
+    position: relative;
+}
+
+.card-details {
+    display: none;
+    /* Hide by default */
+    padding-top: 1rem;
+    border-top: 1px solid #ddd;
+    margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.home-page {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    margin: auto;
+    margin-top: 0;
 }

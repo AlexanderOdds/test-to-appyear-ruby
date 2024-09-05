@@ -1,4 +1,4 @@
-class RegistrationController < ApplicationController
+class UsersController < ApplicationController
   def new
     @user = User.new
   end
@@ -10,6 +10,10 @@ class RegistrationController < ApplicationController
     else
       render :new
     end
+  end
+
+  def index
+    @users = User.all
   end
 
   private

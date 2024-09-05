@@ -1,0 +1,61 @@
+<%= stylesheet_link_tag "custom_form", "data-turbo-track": "reload" %>
+
+<div class="form-container">
+  <h1>Register New User</h1>
+
+  <%= form_with(model: @user, url: create_registration_path, local: true) do |form| %>
+    <div class="form-row">
+      <div class="form-group">
+        <%= form.label :first_name %>
+        <%= form.text_field :first_name %>
+      </div>
+      <div class="form-group">
+        <%= form.label :last_name %>
+        <%= form.text_field :last_name %>
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-group">
+        <%= form.label :birthday %>
+        <%= form.date_field :birthday %>
+      </div>
+      <div class="form-group">
+        <%= form.label :gender %>
+        <div class="radio-group">
+          <%= form.radio_button :gender, 'male' %>
+          <%= form.label :gender_male, 'Male' %>
+          <%= form.radio_button :gender, 'female' %>
+          <%= form.label :gender_female, 'Female' %>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-group">
+        <%= form.label :email %>
+        <%= form.email_field :email %>
+      </div>
+      <div class="form-group">
+        <%= form.label :phone_number %>
+        <%= form.text_field :phone_number %>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <%= form.label :subject %>
+      <%= form.select :subject, options_for_select([
+        ['Select a subject', ''],
+        ['Mathematics', 'mathematics'],
+        ['Science', 'science'],
+        ['Literature', 'literature'],
+        ['History', 'history'],
+        ['Computer Science', 'computer_science']
+      ]) %>
+    </div>
+
+    <div class="form-group">
+      <%= form.submit "Register" %>
+    </div>
+  <% end %>
+</div>

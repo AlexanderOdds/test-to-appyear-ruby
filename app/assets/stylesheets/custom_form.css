@@ -161,51 +161,43 @@ input[type="submit"]:hover {
     color: #5a68d5;
 
 }
-
-
-/* Link styles */
-.view-data-button {
-    display: inline-block;
-    padding: 0.5rem 1rem;
-    /* Blue color */
-    color: rgb(0, 0, 0);
-    text-decoration: underline;
-    border-radius: 4px;
-    margin-bottom: 1rem;
-    font-size: 1rem;
-    transition: background-color 0.3s ease;
-}
-.view-data-button:hover {
-    color: #5a68d5 ;
-}
 /* General page styles */
-h1 {
-    margin-bottom: 1.5rem;
+.home-page {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    margin: auto;
+    margin-top: 0;
+    text-align: center; 
+
+}
+.home-page h1 {
+    text-align: center; 
     font-size: 2rem;
     font-weight: bold;
-    text-align: center;
+    margin-bottom: 1.5rem;
 }
 
 /* Link styles */
-.view-data{
-    margin-left: 115px;
-    display: flex;
+.view-data {
+    display: inline-block; /* Make the link an inline block to center it */
     padding: 0.5rem 1rem;
-    background-color: #3498db;
-    /* Blue color */
+    background-color: #3498db; /* Blue color */
     color: white;
     text-decoration: none;
     border-radius: 4px;
-    margin-bottom: 1rem;
     font-size: 1rem;
     transition: background-color 0.3s ease;
     max-width: 6rem;
+    margin: 0 auto; /* Center horizontally */
+    margin-bottom: 2rem;
 }
+
 .view-data:hover {
     background-color: #5a68d5;
-
 }
-
 
 /* Card container styles */
 .card-container {
@@ -229,6 +221,8 @@ h1 {
     box-sizing: border-box;
     position: relative;
     overflow: hidden;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
 .card-body {
@@ -236,8 +230,7 @@ h1 {
 }
 
 .card-details {
-    display: none;
-    /* Hide by default */
+    display: none; /* Hide by default */
     padding-top: 1rem;
     border-top: 1px solid #ddd;
     margin-top: 1rem;
@@ -248,14 +241,4 @@ h1 {
         flex-direction: column;
         align-items: center;
     }
-}
-
-.home-page {
-    background-color: white;
-    padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    margin: auto;
-    margin-top: 0;
 }

@@ -30,5 +30,6 @@ jobs:
                 context: .
                 file: ./Dockerfile
                 push: true
-                tags: ${{ secrets.DOCKER_USERNAME }}/register:latest
+                tags: ${{ secrets.DOCKER_USERNAME }}/
+                platforms: linux/arm64, linux/amd64
             
